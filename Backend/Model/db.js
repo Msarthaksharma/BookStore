@@ -1,8 +1,8 @@
 const { timeStamp } = require('console')
 const mongoose = require ('mongoose')
 const url = process.env.URL
-// console.log(url)
-mongoose.connect("mongodb+srv://user:user123@cluster0.y90mt1k.mongodb.net/BookStoreApp")
+console.log(url)
+mongoose.connect(url)
 
 const BookSchema = mongoose.Schema({
     title:{
